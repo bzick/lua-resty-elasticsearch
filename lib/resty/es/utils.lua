@@ -31,7 +31,7 @@ local function json_decode(str)
 end
 
 
-function _M.get_err_str(self, http_response_code, http_response_data)
+function _M.get_err_str(http_response_code, http_response_data)
     return str_format(
         '%s: http response code: %s. and es response error info: %s',
         http_resonse_code, http_response_data
